@@ -33,7 +33,7 @@ git fetch --all --tags --prune --prune-tags \
 
 | Name | Version |
 |------|---------|
-| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | 4.14.0 |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | >= 4.14.0, < 5.0.0 |
 
 ## Modules
 
@@ -41,9 +41,10 @@ No modules.
 
 ## Resources
 
-| Name                                                                                                                                                                                            | Type |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
+| Name | Type |
+|------|------|
 | [azurerm_consumption_budget_resource_group.consumption_budget_resourcegroup](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/consumption_budget_resource_group) | resource |
+| [azurerm_subscription.current](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/subscription) | data source |
 
 ## Inputs
 
@@ -60,8 +61,8 @@ No modules.
 
 ## Outputs
 
-| Name                                                                                                                                                                    | Description                                     |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
+| Name | Description |
+|------|-------------|
 | <a name="output_azurerm_consumption_budget_resource_group"></a> [azurerm\_consumption\_budget\_resource\_group](#output\_azurerm\_consumption\_budget\_resource\_group) | The Resource Group Consumption Budget resource. |
 <!-- END_TF_DOCS -->
 
